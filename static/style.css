@@ -1,0 +1,183 @@
+/* General Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.fade-in {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 2em;
+    color: #6e8efb;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: border-color 0.3s;
+}
+
+.form input:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #6e8efb;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #a777e3;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+/* Zodiac Chart Styling */
+.zodiac-chart {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.zodiac-container {
+    display: inline-block;
+    position: relative;
+}
+
+.zodiac-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Zodiac Result Styling */
+.zodiac-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.zodiac-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.zodiac-details {
+    text-align: center;
+}
+
+.lucky-number {
+    font-weight: bold;
+    color: #a777e3;
+}
+
+/* User Reviews Styling */
+.container h3 {
+    font-size: 1.5em;
+    color: #6e8efb;
+    margin-top: 30px;
+}
+
+.container p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.fa-star {
+    color: #ffcd3c;
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #6e8efb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.back-button:hover {
+    background-color: #a777e3;
+    transform: translateY(-2px);
+}
