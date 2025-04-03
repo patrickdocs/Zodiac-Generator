@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>History</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/static/images/starmap.png" alt="Star Map" class="header-image">
+        <h1 class="fade-in">User History</h1>
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Birthdate</th>
+                    <th>Zodiac Sign</th>
+                    <th>Lucky Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                    <tr>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.day_of_birth }}/{{ user.month_of_birth }}</td>
+                        <td>{{ user.zodiac_sign }}</td>
+                        <td class="lucky-number">{{ user.lucky_number }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
